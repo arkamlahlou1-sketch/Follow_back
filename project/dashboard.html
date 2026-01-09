@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>لوحة التحكم</title>
+</head>
+<body>
+
+<h2>لوحة التحكم</h2>
+
+<form action="api/add_account.php" method="POST">
+  <select name="platform">
+    <option value="instagram">Instagram</option>
+    <option value="tiktok">TikTok</option>
+  </select><br><br>
+
+  <input type="url" name="url" placeholder="رابط الحساب" required><br><br>
+
+  <button type="submit">إضافة الحساب</button>
+</form>
+
+<br>
+
+<form action="api/earn_points.php" method="POST">
+  <button type="submit">كسب نقطة</button>
+</form>
+
+<br>
+
+<form action="api/request_followers.php" method="POST">
+  <button type="submit">طلب متابعين (5 نقاط)</button>
+</form>
+
+</body>
+</html>
