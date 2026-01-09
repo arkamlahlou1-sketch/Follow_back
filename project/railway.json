@@ -1,5 +1,7 @@
 {
-  "deploy": {
-    "dockerfilePath": "./Dockerfile"
+  "build": {
+    "builder": "DOCKERFILE",
+    "dockerfilePath": "Dockerfile"
   }
 }
+
