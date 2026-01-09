@@ -1,6 +1,3 @@
-CREATE DATABASE follow_exchange;
-USE follow_exchange;
-
 CREATE TABLE users (
   id INT AUTO_INCREMENT PRIMARY KEY,
   username VARCHAR(50),
@@ -13,8 +10,7 @@ CREATE TABLE accounts (
   id INT AUTO_INCREMENT PRIMARY KEY,
   user_id INT,
   platform VARCHAR(20),
-  profile_url TEXT,
-  FOREIGN KEY (user_id) REFERENCES users(id)
+  profile_url TEXT
 );
 
 CREATE TABLE tasks (
