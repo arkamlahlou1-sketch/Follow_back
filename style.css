@@ -1,46 +1,45 @@
-* {
-  box-sizing: border-box;
-  font-family: Tahoma, Arial;
-}
-
+/* تنسيق عام للموقع */
 body {
-  margin: 0;
-  background: #f2f4f8;
-  text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
 }
 
-h1, h2 {
-  color: #333;
+/* تنسيق العنوان الرئيسي */
+h1 {
+    color: #2c3e50;
+    margin-bottom: 30px;
 }
 
-form {
-  background: #fff;
-  padding: 20px;
-  margin: 20px auto;
-  width: 90%;
-  max-width: 350px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,.1);
+/* تنسيق منطقة الروابط (الأزرار) */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* المسافة بين الأزرار */
+    flex-wrap: wrap;
 }
 
-input, select, button {
-  width: 100%;
-  padding: 10px;
-  margin: 6px 0;
+nav a {
+    text-decoration: none;
+    color: white;
+    background-color: #007bff; /* لون أزرق احترافي */
+    padding: 10px 25px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-button {
-  background: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
+/* تأثير عند تمرير الماوس فوق الزر */
+nav a:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* حركة بسيطة للأعلى */
 }
 
-button:hover {
-  background: #0056b3;
-}
-
-a {
-  color: #007bff;
-  text-decoration: none;
+/* لون مختلف لزر تسجيل الخروج أو الصفحة النشطة */
+nav a[href="index.html"] {
+    background-color: #6c757d;
 }
