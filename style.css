@@ -1,45 +1,63 @@
-/* تنسيق عام للموقع */
+/* تنسيق الأساسيات */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    text-align: center;
+    font-family: 'Cairo', sans-serif; /* خط عربي مريح */
+    background-color: #f0f2f5;
     margin: 0;
+    padding: 10px;
+    direction: rtl;
+}
+
+/* حاوية الأقسام */
+.section {
+    background: #fff;
+    border-radius: 15px;
     padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-/* تنسيق العنوان الرئيسي */
-h1 {
-    color: #2c3e50;
-    margin-bottom: 30px;
+/* تنسيق الأزرار */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
 }
 
-/* تنسيق منطقة الروابط (الأزرار) */
+#earnPointsBtn { background-color: #28a745; color: white; }
+#requestFollowersBtn { background-color: #ffc107; color: #000; }
+#addAccountForm button { background-color: #007bff; color: white; }
+#logoutBtn { background-color: #dc3545; color: white; width: auto; padding: 5px 15px; }
+
+/* تنسيق قائمة الحسابات */
+.account-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border-right: 5px solid #007bff;
+}
+
+.account-card a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* شريط التنقل العلوي */
 nav {
     display: flex;
-    justify-content: center;
-    gap: 15px; /* المسافة بين الأزرار */
-    flex-wrap: wrap;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    background-color: #007bff; /* لون أزرق احترافي */
-    padding: 10px 25px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.2s;
-    font-weight: bold;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* تأثير عند تمرير الماوس فوق الزر */
-nav a:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px); /* حركة بسيطة للأعلى */
-}
-
-/* لون مختلف لزر تسجيل الخروج أو الصفحة النشطة */
-nav a[href="index.html"] {
-    background-color: #6c757d;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
